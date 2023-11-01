@@ -1,0 +1,95 @@
+.about-section{
+    width: 100%;
+    padding    : 80px;
+    background: #f6f6f6;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.about-section-left{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.about-section-right{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+}
+.about-section-left-container{
+    width: 80%;
+}
+.about-section-right-container{
+    width: 80%;
+}
+.asl-desc{
+    font-size     : 28px;
+    font-weight   : bold;
+    letter-spacing: 2px;
+    color         : #9b9b9b;
+    margin        : 0;
+    font-family: var(--font-family-titles);
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 10px;
+    width: max-content;
+}
+.asl-desc::after{
+position: absolute;
+content: "";
+left: 0;
+bottom: -5px;
+height:4px;
+background: crimson;
+width: 100%;
+border-radius:8px;
+}
+.asl-desc::before{
+position: absolute;
+content: "";
+left: 50%;
+bottom: -15px;
+height: 4px;
+background: crimson;
+width: 50%;
+border-radius:8px;
+transform: translateX(-50%);
+}
+.asl-title{
+    font-size  : 60px;
+    color      : black;
+    font-family: var(--font-family-rest);
+    margin     : 0;
+    position: relative;
+}
+.asl-desc-long{
+    font-size     : 18px;
+    font-weight   : normal;
+    letter-spacing: 2px;
+    color         : #9b9b9b;
+    margin        : 0;
+    font-family: var(--font-family-rest);
+    margin-bottom: 20px;
+}
+.asl-button{
+    outline: none;
+    background: transparent;
+    border: 2px solid crimson ;
+    border-radius: 8px;
+    color: crimson;
+    font-size: 30px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-family: var(--font-family-titles);
+    width: 30%;
+    text-transform: capitalize;
+}
+
+.asl-button:hover{
+    color: black;
+    border-color: crimson;
+    background: crimson;
+}

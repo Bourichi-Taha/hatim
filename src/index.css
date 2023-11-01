@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;400;500;600;700&display=swap');
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgb(0, 0, 0);
+  background-color: #f7f2f2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+::selection {
+  background-color: crimson; /* Change 'YourColorHere' to the desired color value */
+  color: black; /* Change the text color for contrast, if needed */
+}
+
+
+body {
+  --left-navbar : 0;
+  --right-navbar : 76%;
+
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  --font-family-titles: 'Dancing Script', cursive;
+  --font-family-rest: 'Oswald', sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

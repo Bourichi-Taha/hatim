@@ -1,0 +1,146 @@
+.navbar {
+    height         : 80px;
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    background     : transparent;
+    color          : white;
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    padding        : 0 80px;
+}
+
+.navbar-left {
+    font-size     : 50px;
+    font-weight   : bold;
+    line-height   : 1.5;
+    letter-spacing: 1.5px;
+    font-family   : var(--font-family-titles);
+    transition    : all .3s ease-in-out;
+    cursor        : pointer;
+    position      : relative;
+}
+
+.navbar-left:hover {
+    color: crimson;
+}
+
+.navbar-left::after {
+    position  : absolute;
+    content   : "";
+    right     : -10px;
+    bottom       : 0;
+    height    : 100%;
+    width     : 4px;
+    background: crimson;
+    transition: height .3s ease-in-out;
+    z-index: 1;
+}
+.navbar-left::before {
+    position  : absolute;
+    content   : "";
+    right     : -10px;
+    bottom       : 0;
+    height    : 4px;
+    width     : 0;
+    background: crimson;
+    transition: all .3s ease-in-out;
+    transition-delay: .3s;
+    z-index: 2;
+}
+
+.navbar-left:hover::after {
+    height: 4px;
+    bottom: 0;
+}
+.navbar-left:hover::before {
+    right: -10px;
+    width: 110%;
+    height: 4px;
+    bottom: 0;
+    background: white;
+}
+
+.navbar-right {
+    padding    : 0;
+    margin     : 0;
+    list-style : none;
+    display    : flex;
+    align-items: center;
+    gap        : 80px;
+}
+
+.navbar-right-item {
+    font-size     : 22px;
+    text-transform: capitalize;
+    font-family   : var(--font-family-rest);
+    position      : relative;
+    cursor        : pointer;
+}
+
+.navbar-right-item::before {
+    content      : "";
+    position     : absolute;
+    height       : 2px;
+    background   : crimson;
+    left         : 50%;
+    bottom       : 0;
+    width        : 0;
+    transition   : all .4s ease-in-out;
+    border-radius: 4px;
+
+}
+
+.navbar-right-item::after {
+    content      : "";
+    position     : absolute;
+    height       : 2px;
+    background   : crimson;
+    left         : 50%;
+    bottom       : -5px;
+    width        : 0;
+    transition   : all .4s ease-in-out;
+    border-radius: 4px;
+
+}
+
+.navbar-right-item:hover::before {
+    width: 100%;
+    left : 0;
+}
+
+.navbar-right-item:hover::after {
+    width: 40%;
+    left : 30%;
+}
+
+
+.navbar-right-item.active {
+    color   : crimson;
+    position: relative;
+}
+
+.navbar-right-item.active::before {
+    content      : "";
+    position     : absolute;
+    height       : 2px;
+    background   : crimson;
+    left         : 0;
+    bottom       : 0;
+    width        : 100%;
+    border-radius: 4px;
+
+}
+
+.navbar-right-item.active::after {
+    content      : "";
+    position     : absolute;
+    height       : 2px;
+    background   : crimson;
+    left         : 30%;
+    bottom       : -5px;
+    width        : 40%;
+    border-radius: 4px;
+}

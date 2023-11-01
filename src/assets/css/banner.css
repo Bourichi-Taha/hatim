@@ -1,0 +1,88 @@
+.banner {
+    height     : 100vh;
+    width      : 100%;
+    padding    : 0 80px;
+    background : black;
+    display    : flex;
+    align-items: center;
+    color      : white;
+    gap        : 100px;
+}
+
+.banner-image {
+    height : 100%;
+    display: flex;
+    flex   : 0.4;
+}
+
+.banner-image-actual {
+    object-fit: cover;
+    height    : 100%;
+
+}
+
+.banner-text {
+    flex           : .6;
+    display        : flex;
+    justify-content: flex-end;
+    font-family    : var(--font-family-rest);
+}
+
+.banner-text-container {
+    display       : flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width     : 60%;
+
+}
+
+.bt-username {
+    font-size     : 18px;
+    font-weight   : bold;
+    letter-spacing: 2px;
+    color         : #9b9b9b;
+    margin        : 0;
+}
+
+
+.bt-title {
+    font-size  : 60px;
+    color      : white;
+    font-family: var(--font-family-titles);
+    margin     : 0;
+    position: relative;
+    margin-left: 20px;
+}
+.bt-title::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    height: 90%;
+    width: 4px;
+    background: crimson;
+}
+
+.bt-title span {
+    font-family: var(--font-family-titles);
+    color      : crimson;
+}
+
+.bt-button{
+    outline: none;
+    background: transparent;
+    border: 2px solid #9b9b9b ;
+    border-radius: 8px;
+    color: #9b9b9b;
+    font-size: 36px;
+    padding: 20px 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-family: var(--font-family-titles);
+    width: 50%;
+}
+
+.bt-button:hover{
+    color: crimson;
+    border-color: crimson;
+}
