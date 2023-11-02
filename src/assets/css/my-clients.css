@@ -1,0 +1,13 @@
+.my-clients{
+    height: 50vh;
+    width: 100vw;
+    background: gray;
+    display: flex;
+    align-items: center;
+
+}
+.left-client{
+    height: 100%;
+    width: 50vw;
+    background: black;
+}

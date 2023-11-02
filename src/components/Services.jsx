@@ -21,7 +21,7 @@ const Services = () => {
                 <div className="blog-content-center">
                     <div className="blog-content-center-top">
                         <h3 className="blog-content-item-title">Learn More</h3>
-                        <button className="blog-more-button">more Blogs</button>
+                        <button className="blog-more-button">More Services</button>
                     </div>
                     <div className="blog-content-center-bottom">
                         <h3 className="blog-content-item-title">Product Design</h3>

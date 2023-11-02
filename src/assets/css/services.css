@@ -1,7 +1,7 @@
 .blog-container {
     height        : 150vh;
     width         : 100vw;
-    padding       : 20px 80px;
+    padding       : 40px 80px;
     background    : black;
     display       : flex;
     flex-direction: column;
