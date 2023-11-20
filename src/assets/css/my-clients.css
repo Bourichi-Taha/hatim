@@ -1,13 +1,108 @@
 .my-clients{
-    height: 50vh;
+    min-height: 80vh;
     width: 100vw;
-    background: gray;
+    background: red;
     display: flex;
     align-items: center;
 
 }
 .left-client{
-    height: 100%;
-    width: 50vw;
+    height: 81vh;
+    background: white;
+    flex: .5;
+    width: 50%;
+    
+}
+.right-client{
+    height: 81vh;
     background: black;
+    flex: 0.5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    gap: 30px;
+}
+.right-client-title{
+    color: #9b9b9b;
+    font-size     : 28px;
+    font-family   : var(--font-family-titles);
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+}
+.right-client-title::after {
+    position     : absolute;
+    content      : "";
+    left         : 0;
+    bottom       : -5px;
+    height       : 4px;
+    background   : crimson;
+    width        : 100%;
+    border-radius: 8px;
+}
+
+.right-client-title::before {
+    position     : absolute;
+    content      : "";
+    left         : 50%;
+    bottom       : -15px;
+    height       : 4px;
+    background   : crimson;
+    width        : 50%;
+    border-radius: 8px;
+    transform    : translateX(-50%);
+
+}
+.right-client-title-desc{
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: normal;
+    text-align: center;
+}
+.right-client-desc{
+    font-size     : 18px;
+    font-weight   : normal;
+    letter-spacing: 2px;
+    line-height: 2;
+    color         : #9b9b9b;
+    margin        : 0;
+    font-family: var(--font-family-rest);
+    text-align: center;
+}
+.right-client-statistics{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.right-client-statistic-item{
+    flex: 0.4;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right-item-statistics-cube{
+    height: 150px;
+    width: 150px;
+    background: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+.right-item-statistics-desc{
+    height: 150px;
+    width: 150px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    font-family: var(--font-family-rest);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

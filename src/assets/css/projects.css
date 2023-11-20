@@ -1,0 +1,122 @@
+.projects-container {
+    min-height    : 70vh;
+    width         : 100%;
+    padding       : 80px;
+    display       : flex;
+    flex-direction: column;
+    gap           : 40px;
+    color         : white;
+    align-items   : center;
+}
+
+.projects-container-title {
+    font-size     : 28px;
+    font-family   : var(--font-family-titles);
+    text-transform: capitalize;
+    position      : relative;
+    width         : fit-content;
+    color         : #9b9b9b;
+}
+
+.projects-container-title::after {
+    position     : absolute;
+    content      : "";
+    left         : 0;
+    bottom       : -5px;
+    height       : 4px;
+    background   : crimson;
+    width        : 100%;
+    border-radius: 8px;
+}
+
+.projects-container-title::before {
+    position     : absolute;
+    content      : "";
+    left         : 50%;
+    bottom       : -15px;
+    height       : 4px;
+    background   : crimson;
+    width        : 50%;
+    border-radius: 8px;
+    transform    : translateX(-50%);
+
+}
+
+.projects-container-title-desc {
+    font-size     : 60px;
+    text-transform: capitalize;
+    font-weight   : normal;
+    text-align    : center;
+}
+
+.projects-container-projects-row {
+    width          : 100%;
+    padding        : 20px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 20px;
+}
+
+.projects-container-project-col {
+    flex           : .25;
+    width          : 25%;
+    height         : 350px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+.polygon-img-container{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: url('#flt_tag');
+
+}
+.projects-container-project-col-img {
+    object-fit       : cover;
+    height           : 250px;
+    width: 250px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path        : polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    
+}
+.flt_svg {
+    visibility: hidden; 
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+.projects-container-project-col-category{
+    font-size: 24px;
+    color: crimson;
+    font-weight: lighter;
+    font-family: var(--font-family-titles);
+    margin: 10px 0;
+}
+.projects-container-project-col-name{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-family-rest);
+}
+.projects-container-button{
+    width: 300px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-family: var(--font-family-rest);
+    font-weight: bold;
+    cursor: pointer;
+}

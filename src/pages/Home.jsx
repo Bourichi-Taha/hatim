@@ -5,6 +5,9 @@ import Services from '../components/Services'
 import AdsSection from '../components/AdsSection'
 import Testemonials from '../components/Testemonials'
 import MyClients from '../components/MyClients'
+import Thecnologies from '../components/Thecnologies'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 const Home = () => {
   return (
@@ -15,6 +18,9 @@ const Home = () => {
         <AdsSection />
         <Testemonials />
         <MyClients/>
+        <Thecnologies/>
+        <Projects/>
+        <Contact/>
     </div>
   )
 }
